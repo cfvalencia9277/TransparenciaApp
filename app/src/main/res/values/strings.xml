@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Transparencia</string>
 
+
+
+    <string name="Explanation_text"> Escoge tu tipo de grupo y hagamos Transparencia</string>
     <string name="Intro">¡Agita tu celular para cambiar la pregunta!</string>
     <string name="Intro2">Tu Pregunta es:</string>
     <string name="action_settings">Settings</string>

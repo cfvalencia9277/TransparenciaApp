@@ -11,6 +11,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -34,13 +36,15 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        mSensorManager.registerListener(mSensorListener, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
-        mAccel = 0.00f;
-        mAccelCurrent = SensorManager.GRAVITY_EARTH;
-        mAccelLast = SensorManager.GRAVITY_EARTH;
+
 
         final Button button = (Button) findViewById(R.id.BT1);
+        final LinearLayout menu = (LinearLayout) findViewById(R.id.menu_view);
+        final ScrollView questions = (ScrollView) findViewById(R.id.scroll_view);
+        Button menu1 = (Button) findViewById(R.id.menu1);
+        Button menu2 = (Button) findViewById(R.id.menu2);
+        Button menu3 = (Button) findViewById(R.id.menu3);
+        Button menu4 = (Button) findViewById(R.id.menu4);
         final Random randomGenerator = new Random();
         final ArrayList sample = new ArrayList() {{
 
@@ -70,7 +74,18 @@ public class MainActivity extends Activity
             add(getResources().getString(R.string.pregunta24));
             add(getResources().getString(R.string.pregunta25));
         }};
-
+      menu1.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              menu.setVisibility(View.GONE);
+              questions.setVisibility(View.VISIBLE);
+              mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+              mSensorManager.registerListener(mSensorListener, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
+              mAccel = 0.00f;
+              mAccelCurrent = SensorManager.GRAVITY_EARTH;
+              mAccelLast = SensorManager.GRAVITY_EARTH;
+          }
+      });
 
 
         button.setOnClickListener(new View.OnClickListener() {

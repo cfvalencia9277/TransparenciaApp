@@ -7,8 +7,59 @@
     android:orientation="vertical"
     android:background="#FFFFFF"
     >
+<LinearLayout
+    android:id="@+id/menu_view"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:text="@string/Explanation_text"
+        android:layout_marginTop="20dp"
+        android:textSize="32sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/explanation_text"
+        android:gravity="center"
+        android:textColor="#000000"
+        />
+
+    <Button
+        android:layout_marginTop="20sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu1"
+        android:text="Grupo de Hombres"
+        />
+    <Button
+        android:layout_marginTop="20sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu2"
+        android:text="click aqui cambia la pregunta"
+        />
+    <Button
+        android:layout_marginTop="20sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu3"
+        android:text="click aqui cambia la pregunta"
+        />
+    <Button
+        android:layout_marginTop="20sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu4"
+        android:text="click aqui cambia la pregunta"
+        />
+
+
+</LinearLayout>
+
 
 <ScrollView
+    android:id="@+id/scroll_view"
+    android:visibility="gone"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
 
