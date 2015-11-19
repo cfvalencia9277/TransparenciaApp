@@ -34,12 +34,13 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:paddingTop="10dp"
         >
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="80dp"
-            android:src="@drawable/vpa"
+            android:src="@drawable/cru_logo"
             android:layout_weight="1"
             />
         <ImageView
