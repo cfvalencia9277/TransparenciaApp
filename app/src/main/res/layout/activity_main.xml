@@ -1,0 +1,89 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+     >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <TextView android:text="@string/Intro"
+        android:layout_marginTop="20dp"
+        android:textSize="32sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TV1"
+        android:gravity="center"
+        android:textColor="#000000"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:src="@drawable/vpa"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logofesdpeque"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/Intro2"
+        android:layout_marginTop="50sp"
+        android:textSize="32sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TV2"
+        android:gravity="center"
+        android:textColor="#000000"
+        />
+        <Button
+            android:layout_marginTop="20sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/BT1"
+            android:text="click aqui cambia la pregunta"
+             />
+
+        <TextView
+            android:hint="Mueve el celular "
+            android:layout_marginTop="50sp"
+            android:layout_marginBottom="200sp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="32sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TV3"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+</LinearLayout>
+
+</ScrollView>
+</LinearLayout>

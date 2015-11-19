@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Transparencia</string>
+
+    <string name="Intro">¡Agita tu celular para cambiar la pregunta!</string>
+    <string name="Intro2">Tu Pregunta es:</string>
+    <string name="action_settings">Settings</string>
+    <string name="pregunta1"> ¿ Cuales son tus confusiones mas grandes en cuanto a tu relación con Dios ?</string>
+    <string name="pregunta2"> ¿ Que has leido en la biblia la ultima semana ? </string>
+    <string name="pregunta3"> ¿Que te ha estado hablando Dios con respecto a esto ?</string>
+    <string name="pregunta4"> ¿ En que aspecto de tu vida te sientes resistiendo a Dios ?</string>
+    <string name="pregunta5"> ¿ Que cosas específicas has estado orando en relacion a otros ?</string>
+    <string name="pregunta6"> ¿ Que cosas específicas has estado orando  con relacion a ti mismo ?</string>
+    <string name="pregunta7"> ¿ Que tareas específicas estas enfrentando que estan incompletas ?</string>
+    <string name="pregunta8"> ¿ Que hábitos te intimidan en el presente ?</string>
+    <string name="pregunta9"> ¿ Que has leido en la prensa secular esta semana ?</string>
+    <string name="pregunta10"> ¿ Que lectura de tipo general has estado haciendo ?</string>
+    <string name="pregunta11"> ¿ Que deporte  has hecho  esta semana ?</string>
+    <string name="pregunta12"> ¿ Como te esta yendo con tu esposo e hijos, Padres ?</string>
+    <string name="pregunta13"> ¿ Si le preguntaras a tu espos@ sobre tu estado mental que diría ?</string>
+    <string name="pregunta14"> ¿ Sientes algunos ataques espirituales del enemigo esta semana? Hoy?</string>
+    <string name="pregunta15"> ¿ Si Satanas quisiera invalidarte como siervo de Dios por donde te atacaría ?</string>
+    <string name="pregunta16"> ¿ Como esta tu vida sexual (Fantasias, tentaciones etc..)?</string>
+    <string name="pregunta17"> ¿ Como estas financieramente (Deudas o gasto sin control)?</string>
+    <string name="pregunta18"> ¿ Hay algunos conflictos sin resolver (Peleas, disputas, estres) con tu círculo de relaciones actual (amigos, familia, aquellos con los que te deberias sentir seguro)?</string>
+    <string name="pregunta19"> ¿ Cuando fue la última vez que pasaste tiempo con un amigo del mismo género ?</string>
+    <string name="pregunta20"> ¿ Que tipo de tiempo has pasado con un no cristiano esta semana ?</string>
+    <string name="pregunta21"> ¿ Que desafíos enfrentaras este mes ?</string>
+    <string name="pregunta22"> ¿Cuales son tus temores actuales (decepcionar a tu familia, decepcionar a tus amigos) ?</string>
+    <string name="pregunta23"> ¿ Estas durmiendo bien ?</string>
+    <string name="pregunta24"> ¿ Cuales son las tres cosas mas importantes por las cuales estas agradecid@ ?</string>
+    <string name="pregunta25"> ¿ Te gustas a ti mismo en este lugar de tu peregrinaje ?</string>
+
+</resources>
