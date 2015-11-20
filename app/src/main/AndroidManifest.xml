@@ -3,6 +3,7 @@
     package="com.fesdapps.transparencia" >
 
     <application
+        android:label="Transparencia"
         android:allowBackup="true"
         android:icon="@mipmap/tranparenciaicon"
         android:theme="@style/AppTheme"

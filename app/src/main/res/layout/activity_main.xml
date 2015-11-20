@@ -36,21 +36,21 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/menu2"
-        android:text="click aqui cambia la pregunta"
+        android:text="Grupo Mujeres"
         />
     <Button
         android:layout_marginTop="20sp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/menu3"
-        android:text="click aqui cambia la pregunta"
+        android:text="Grupo de jovenes"
         />
     <Button
         android:layout_marginTop="20sp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/menu4"
-        android:text="click aqui cambia la pregunta"
+        android:text="No creyentes"
         />
 
 

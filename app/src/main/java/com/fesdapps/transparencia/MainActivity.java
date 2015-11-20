@@ -28,6 +28,7 @@ public class MainActivity extends Activity
     private float mAccel; // acceleration apart from gravity
     private float mAccelCurrent; // current acceleration including gravity
     private float mAccelLast; // las
+    boolean isFirst=false;
 
 
     @Override
@@ -35,12 +36,14 @@ public class MainActivity extends Activity
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        final LinearLayout  menu = (LinearLayout) findViewById(R.id.menu_view);
+        final ScrollView  questions = (ScrollView) findViewById(R.id.scroll_view);
+
 
 
 
         final Button button = (Button) findViewById(R.id.BT1);
-        final LinearLayout menu = (LinearLayout) findViewById(R.id.menu_view);
-        final ScrollView questions = (ScrollView) findViewById(R.id.scroll_view);
+
         Button menu1 = (Button) findViewById(R.id.menu1);
         Button menu2 = (Button) findViewById(R.id.menu2);
         Button menu3 = (Button) findViewById(R.id.menu3);
@@ -86,6 +89,42 @@ public class MainActivity extends Activity
               mAccelLast = SensorManager.GRAVITY_EARTH;
           }
       });
+        menu2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                menu.setVisibility(View.GONE);
+                questions.setVisibility(View.VISIBLE);
+                mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+                mSensorManager.registerListener(mSensorListener, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
+                mAccel = 0.00f;
+                mAccelCurrent = SensorManager.GRAVITY_EARTH;
+                mAccelLast = SensorManager.GRAVITY_EARTH;
+            }
+        });
+        menu3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                menu.setVisibility(View.GONE);
+                questions.setVisibility(View.VISIBLE);
+                mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+                mSensorManager.registerListener(mSensorListener, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
+                mAccel = 0.00f;
+                mAccelCurrent = SensorManager.GRAVITY_EARTH;
+                mAccelLast = SensorManager.GRAVITY_EARTH;
+            }
+        });
+        menu4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                menu.setVisibility(View.GONE);
+                questions.setVisibility(View.VISIBLE);
+                mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+                mSensorManager.registerListener(mSensorListener, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
+                mAccel = 0.00f;
+                mAccelCurrent = SensorManager.GRAVITY_EARTH;
+                mAccelLast = SensorManager.GRAVITY_EARTH;
+            }
+        });
 
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -100,14 +139,29 @@ public class MainActivity extends Activity
         });
 
     }
+
+
+
+
+
            @Override
            protected void onResume() {
                super.onResume();
+               mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+               mSensorManager.registerListener(mSensorListener, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
+               mAccel = 0.00f;
+               mAccelCurrent = SensorManager.GRAVITY_EARTH;
+               mAccelLast = SensorManager.GRAVITY_EARTH;
                mSensorManager.registerListener(mSensorListener, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
            }
 
            @Override
            protected void onPause() {
+               mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+               mSensorManager.registerListener(mSensorListener, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
+               mAccel = 0.00f;
+               mAccelCurrent = SensorManager.GRAVITY_EARTH;
+               mAccelLast = SensorManager.GRAVITY_EARTH;
                mSensorManager.unregisterListener(mSensorListener);
                super.onPause();
            }
@@ -167,4 +221,18 @@ public class MainActivity extends Activity
            };
 
 
+           @Override
+           public void onBackPressed() {
+               if(!isFirst){
+                   LinearLayout  menu = (LinearLayout) findViewById(R.id.menu_view);
+                   ScrollView  questions = (ScrollView) findViewById(R.id.scroll_view);
+                   menu.setVisibility(View.VISIBLE);
+                   questions.setVisibility(View.GONE);
+                   isFirst = true;
+               }
+               else{
+                   isFirst = false;
+                   super.onBackPressed();
+               }
+           }
        }
